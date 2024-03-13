@@ -1,0 +1,29 @@
+﻿@model List<ApplicationUser>
+<div class="container">
+    <div class="row pt-4 pb-3">
+        <div class="col-6">
+            <h2 class="text-primary">
+                User List
+            </h2>
+        </div>
+        <div class="col-6 text-end">
+            <a asp-area="Identity" asp-page="/Account/Register"><i class="bi bi-plus-circle"></i> Create User</a>
+        </div>
+    </div>
+    <table id="tblData" class="table table-bordered" table-striped style="width:100%">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Company</th>
+                <th>Role</th>
+                <th></th>
+            </tr>
+        </thead>
+    </table>
+</div>
+
+@section Scripts {
+    <script src="~/js/user.js"></script>
+}
